@@ -99,11 +99,12 @@ struct TabBarButton: View {
             }
         }, label: {
             VStack {
-                Image(selected == value ? value + "_selected": value )
+                Image(selected == value ? value + "_selected": value)
                     .resizable()
                     .renderingMode(.template)
                     .frame(width:26,height: 26)
                     .foregroundColor(selected == value ? .purple : .gray)
+                    .rotation3DEffect(selected == value ? .zero : .degrees(-180), axis: (x: 0.0, y: 1.0, z: 0.0))
 
                 Text(value)
                     .font(.caption)

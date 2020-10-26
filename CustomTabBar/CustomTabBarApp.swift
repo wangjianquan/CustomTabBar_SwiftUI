@@ -12,8 +12,8 @@ struct CustomTabBarApp: App {
     var body: some Scene {
         WindowGroup {
 //            SystemTabBar()
-            TabBarView()
-//            MainTabBar()
+//            TabBarView()
+            MainTabBar()
         }
     }
 }
