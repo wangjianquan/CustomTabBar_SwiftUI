@@ -72,7 +72,6 @@ struct MainTabBar: View {
                 .padding(.horizontal, 24)
                 .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? 15 : UIApplication.shared.windows.first?.safeAreaInsets.bottom)
             }
-//            .background(Color.secondary)
             .ignoresSafeArea(.all, edges: .bottom)
         }
     }
@@ -95,7 +94,7 @@ struct MainTabBarButton: View {
             }
         }, label: {
             VStack {
-                let imageName = "tabbar_" + currentValue.rawValue
+                let imageName = currentValue.rawValue
                 
                 Image(selected == currentValue ? imageName + "_selected": imageName)
                     .resizable()

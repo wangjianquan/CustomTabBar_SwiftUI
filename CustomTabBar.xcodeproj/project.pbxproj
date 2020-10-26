@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120FDBFA2546B6CC00E93BA6 /* BubbleTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120FDBF92546B6CC00E93BA6 /* BubbleTabBarView.swift */; };
 		122A91072542853E0092B0E5 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122A91062542853E0092B0E5 /* MainTabBar.swift */; };
 		122A910C2542B6DF0092B0E5 /* SystemTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122A910B2542B6DF0092B0E5 /* SystemTabBar.swift */; };
 		12BD8D0D25418C7A00907981 /* CustomTabBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD8D0C25418C7900907981 /* CustomTabBarApp.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		120FDBF92546B6CC00E93BA6 /* BubbleTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTabBarView.swift; sourceTree = "<group>"; };
 		122A91062542853E0092B0E5 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		122A910B2542B6DF0092B0E5 /* SystemTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTabBar.swift; sourceTree = "<group>"; };
 		12BD8D0925418C7900907981 /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 			children = (
 				12BD8D0C25418C7900907981 /* CustomTabBarApp.swift */,
 				12BD8D3A25418C9800907981 /* TabBarView.swift */,
+				120FDBF92546B6CC00E93BA6 /* BubbleTabBarView.swift */,
 				122A910B2542B6DF0092B0E5 /* SystemTabBar.swift */,
 				122A91062542853E0092B0E5 /* MainTabBar.swift */,
 				12BD8D0E25418C7A00907981 /* ContentView.swift */,
@@ -286,6 +289,7 @@
 				122A91072542853E0092B0E5 /* MainTabBar.swift in Sources */,
 				12BD8D5425418CB900907981 /* MyView.swift in Sources */,
 				12BD8D0F25418C7A00907981 /* ContentView.swift in Sources */,
+				120FDBFA2546B6CC00E93BA6 /* BubbleTabBarView.swift in Sources */,
 				12BD8D4525418CA500907981 /* VideoView.swift in Sources */,
 				12BD8D4025418C9E00907981 /* HomeView.swift in Sources */,
 				12BD8D3B25418C9800907981 /* TabBarView.swift in Sources */,
@@ -451,6 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CustomTabBar/Preview Content\"";
+				DEVELOPMENT_TEAM = KJ48WR2Q9M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CustomTabBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -472,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CustomTabBar/Preview Content\"";
+				DEVELOPMENT_TEAM = KJ48WR2Q9M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CustomTabBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

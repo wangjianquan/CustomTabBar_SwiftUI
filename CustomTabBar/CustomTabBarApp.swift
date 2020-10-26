@@ -13,7 +13,8 @@ struct CustomTabBarApp: App {
         WindowGroup {
 //            SystemTabBar()
 //            TabBarView()
-            MainTabBar()
+//            MainTabBar()
+            BubbleTabBarView()
         }
     }
 }

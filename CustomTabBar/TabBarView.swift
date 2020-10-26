@@ -8,11 +8,11 @@
 import SwiftUI
 
 
-var tabBars = ["tabbar_home","tabbar_video","tabbar_message","tabbar_discover","tabbar_profile"]
+var tabBars = ["home","video","message","discover","profile"]
 
 struct TabBarView: View {
     
-    @State private var selected = "tabbar_home"
+    @State private var selected = "home"
     @State var centerX : CGFloat = 0
     init() {
         UITabBar.appearance().isHidden = true

@@ -14,7 +14,10 @@ struct FindView: View {
                 Text("发现")
             }
             
-        }.navigationTitle("发现")
+        }
+        .navigationTitle("发现")
+        .navigationBarTitleDisplayMode(.inline)
+
     }
 }
 

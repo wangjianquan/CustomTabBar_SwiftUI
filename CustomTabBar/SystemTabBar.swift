@@ -44,7 +44,7 @@ struct SystemTabBar: View {
             NavigationView {
                 MessageView()
             }.tabItem {
-                Label("我", systemImage: "message.fill")
+                Label("消息", systemImage: "message.fill")
             }.tag(Tab.message)
 
             NavigationView {
