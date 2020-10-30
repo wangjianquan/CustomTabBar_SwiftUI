@@ -11,10 +11,18 @@ struct HomeView: View {
     var body: some View {
         List {
             ForEach(0...20, id: \.self) { (id) in
-                Text("首页")
+            NavigationLink(
+                destination: ContentView(title: "sdsd"),
+                label: {
+                    Text("首页 \(id)")
+
+                })
             }
             
-        }.navigationTitle("首页")
+        }
+        .navigationTitle("首页")
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
