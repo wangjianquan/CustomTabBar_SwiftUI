@@ -15,8 +15,9 @@ struct CustomTabBarApp: App {
 //            TabBarView()
 //            MainTabBar()
 //            BubbleTabBarView()
+            CurvedTabBar()
 //            NavigationView(content: {
-                TabBarLineStyle()
+//                TabBarLineStyle()
 //            })
 
         }

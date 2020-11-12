@@ -114,7 +114,6 @@ struct TabBarButton: View {
             .padding(.top)
 //            .background(Color.red)
             .frame(width: (UIScreen.main.bounds.size.width-2*24)/5,height: 50)
-            .offset(y: selected == value ? -15 : 0)
         })
     }
 }
