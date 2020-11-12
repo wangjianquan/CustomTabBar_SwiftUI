@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		126EB2CA255D30CB002AEBE5 /* PublishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126EB2C9255D30CB002AEBE5 /* PublishView.swift */; };
+		127C04F7255D3D3A00F871E5 /* ZZTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127C04F6255D3D3A00F871E5 /* ZZTabBar.swift */; };
 		12BD8D0D25418C7A00907981 /* CustomTabBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD8D0C25418C7900907981 /* CustomTabBarApp.swift */; };
 		12BD8D0F25418C7A00907981 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD8D0E25418C7A00907981 /* ContentView.swift */; };
 		12BD8D1125418C7C00907981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BD8D1025418C7C00907981 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		126EB2C9255D30CB002AEBE5 /* PublishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishView.swift; sourceTree = "<group>"; };
+		127C04F6255D3D3A00F871E5 /* ZZTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZZTabBar.swift; sourceTree = "<group>"; };
 		12BD8D0925418C7900907981 /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BD8D0C25418C7900907981 /* CustomTabBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarApp.swift; sourceTree = "<group>"; };
 		12BD8D0E25418C7A00907981 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			children = (
 				12BF80FC255BDA6100093357 /* MainTabBar.swift */,
 				12BF8109255BE59400093357 /* CurvedTabBar.swift */,
+				127C04F6255D3D3A00F871E5 /* ZZTabBar.swift */,
 				12BF80FD255BDA6100093357 /* BubbleTabBarView.swift */,
 				12BF80FE255BDA6100093357 /* SystemTabBar.swift */,
 				12BF80FF255BDA6100093357 /* TabBarView.swift */,
@@ -311,6 +314,7 @@
 				12BD8D4025418C9E00907981 /* HomeView.swift in Sources */,
 				126EB2CA255D30CB002AEBE5 /* PublishView.swift in Sources */,
 				12BF8105255BDA6100093357 /* TabBarLineStyle.swift in Sources */,
+				127C04F7255D3D3A00F871E5 /* ZZTabBar.swift in Sources */,
 				12BF8101255BDA6100093357 /* MainTabBar.swift in Sources */,
 				12BF8102255BDA6100093357 /* BubbleTabBarView.swift in Sources */,
 				12BD8D0D25418C7A00907981 /* CustomTabBarApp.swift in Sources */,
