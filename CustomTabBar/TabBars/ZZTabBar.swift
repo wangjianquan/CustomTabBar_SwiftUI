@@ -47,41 +47,42 @@ struct ZZTabBar: View {
                 .ignoresSafeArea(.all, edges: .top)
 
             }
-            HStack(spacing: 0, content: {
-//                ZStack {}
-                ForEach(tabBars, id: \.self) { (value)  in
-                    GeometryReader(content: { geometry in
+            ZStack {
+                HStack(content: {
+                    ForEach(tabBars, id: \.self) { (value)  in
                         ZZTabBarButton(selected: $selected, value: value)
-                    })
-                    .frame(height: 49)
-                    if value != tabBars.last{Spacer(minLength: 0)}
-                    if value == "玩家" {
-//                        Spacer().frame(width:10)
-                        Button(action: {
-                            withAnimation(.spring()) {
-                                self.isPresented.toggle()
-                            }
-                        }, label: {
-                            Image("tab_willsell")
-                        })
-                        .fullScreenCover(isPresented: $isPresented, content: {
-                            PublishView()
-                        })
-                        .frame(width: (UIScreen.main.bounds.size.width-2*24)/5,height: 49)
-                        .clipShape(Circle())
-                        .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0.0, y: 0.0)
-                        .offset(y:  UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? -25 : -40)
+                        if value != tabBars.last{Spacer(minLength: 0)}
+                        if value == tabBars[1]{
+                            Spacer().frame(width:40)
+                        }
                     }
-                }
-            })
-//            .frame(height:49)
-            .padding(.horizontal, 24)//关联TabBarButton中(UIScreen.main.bounds.size.width-2*24)/5
-            .padding(.top)
-            .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
-            .background(Image("tabbar_background"))
-            .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: -5)
+                })
+                .frame(height: 49)
+                .padding(.horizontal,20)
+                .padding(.bottom,UIApplication.shared.windows.first?.safeAreaInsets.bottom)
+                .background(ZZCurvedShape())
+                
+                Button(action: {
+                    withAnimation(.spring()) {
+                        self.isPresented.toggle()
+                    }
+                }, label: {
+                    Image("tab_willsell")
+                })
+                .fullScreenCover(isPresented: $isPresented, content: {
+                    PublishView()
+                })
+                .frame(width: 49,height: 49)
+                .shadow(color: Color.red.opacity(0.5), radius: 5, x: 0.0, y: 0.0)
+                .offset(y:  UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? -25 : -35)
+            }
+            
+
+
+
         }
         .ignoresSafeArea(.all, edges: .bottom)
+        .background(Color.white)
     }
 }
 
@@ -103,21 +104,17 @@ struct ZZTabBarButton: View {
             }
         }, label: {
             VStack(spacing:0) {
-//
                 Image(selected == value ? value + "_select": value)
                     .frame(width:26,height: 26)
-               
-
                 Text(value)
                     .font(.caption)
                 Spacer(minLength: 10)
             }
             .padding(.top)
-            
         })
-        .frame(width: (UIScreen.main.bounds.size.width-2*24)/5,height: 49)
+        .frame(width: 49,height: 49)
         .foregroundColor(selected == value ? .red : .gray)
-        .background(Color.green)
+//        .background(Color.green)
 
     }
 }
@@ -137,7 +134,7 @@ struct ZZCurvedShape: View {
             path.addLine(to: CGPoint(x: 0, y: 49 + height!))
         }
         .fill(Color.white)
-        .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0.0, y: 0.0)
+        .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0.0, y: 0.0)
         .rotationEffect(.init(degrees: 180))
     }
 }

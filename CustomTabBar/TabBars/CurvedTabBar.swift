@@ -67,15 +67,14 @@ struct CurvedTabBar: View {
                         PublishView()
                     })
                     .frame(width: 49, height: 49)
-                    .clipShape(Circle())
-                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0.0, y: 0.0)
+                    //.clipShape(Circle())
+                    .shadow(color: Color.red.opacity(0.5), radius: 5, x: 0.0, y: 0.0)
                     .offset(y:  UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? -25 : -40)
                 })
             })
         }
         .ignoresSafeArea(.all, edges: .bottom)
         .background(Color.white)
-
     }
 }
 
